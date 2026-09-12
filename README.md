@@ -6,25 +6,53 @@ Reyhan Aydoğan · Mehmet Onur Keskin · Umut Çakan
 
 [![Tests](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/actions/workflows/tests.yml)
 
-This study brings negotiation tactics and physical expression together. Participants negotiate with Jennifer with and without gestures, while separate participant groups encounter either a time-based or a behavior-based tactic.
+Jennifer can make the same offer with a neutral posture, a pleased gesture or a
+visible sign of frustration. **Does that body language change the negotiation,
+and does the answer depend on how she bargains?** This study brings the bidding
+tactic and the robot's expression into the same experiment.
 
-## Method
+## Giving a negotiation strategy a physical expression
 
-Gesture is varied **within participants**; tactic is varied **between groups**. This distinction matters when comparing outcomes. Each participant follows two main sessions, with score profiles attached to session position and robot gesture order counterbalanced.
+![Paper Figure 3: Jennifer's nine gestures, including readiness, mild, offended, neutral, pleasant, hurry-up, time-up and acceptance responses.](docs/paper/gestures.png)
 
-```mermaid
-flowchart TD
-  A[Participant assigned a tactic] --> B[Time-based group]
-  A --> C[Behavior-based group]
-  B --> D[With gestures and without gestures]
-  C --> E[With gestures and without gestures]
-  D --> F[Paired sessions; counterbalanced order]
-  E --> F
-```
+*Figure 3 from the paper. The gestures accompany moods chosen from the negotiation
+state and changes in the human's offers; Table I gives the mood–argument rules.*
 
-## Study and findings
+The study uses a mixed design. Each person negotiates **with and without gestures**,
+in counterbalanced order. The bidding tactic is assigned **between participant
+groups**. Two versions of the deserted-island resource profile accompany the two
+session positions.
 
-The paper reports higher robot utility for the behavior-based tactic and a gesture effect within that tactic. Its result is about the combination of bargaining behavior and expression; it should not be read as a uniform benefit of gestures across all strategies. [Read the paper](https://doi.org/10.1109/THMS.2021.3121664).
+| Experimental factor | Conditions | Compared across |
+| --- | --- | --- |
+| Bidding tactic | Time-dependent stochastic (TSBT); behavior-based adaptive (BABT) | Separate participant groups |
+| Gesture | Enabled; disabled | The same participant's two sessions |
+| Resource profile | First-session and second-session point tables | Session position |
+
+TSBT concedes with time. BABT responds to the human's bidding behavior. This lets
+the study examine whether a gesture supports or conflicts with the bargaining
+rule behind it.
+
+## Strategy and expression have a joint effect
+
+![Paper Figure 7: agent and participant scores for TSBT and BABT, with and without gestures.](docs/paper/tactics-and-gestures.svg)
+
+*Figure 7. The utility comparison includes 42 participants who reached agreement
+in both conditions: 23 in TSBT and 19 in BABT. The larger agreement-rate analysis
+uses 60 participants whose speech and recorded bids passed the study's checks.*
+
+| Jennifer's mean agreement score | With gestures | Without gestures |
+| --- | ---: | ---: |
+| TSBT | 60.21 | 61.26 |
+| BABT | 68.89 | 73.84 |
+
+BABT produced higher agent scores than TSBT in the published analysis. Within
+BABT, agent scores were lower with gestures ($p=0.018$); the corresponding TSBT
+comparison was not significant. The result motivates studying **what the robot
+does and how it expresses that decision together**. It does not establish that
+gestures uniformly help or harm negotiation.
+[Paper Section VI-C and Figure 7](https://doi.org/10.1109/THMS.2021.3121664) ·
+[Figure sources](docs/paper/README.md).
 
 ## What you can explore
 

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "paper_url": "https://doi.org/10.1109/THMS.2021.3121664",
+  "pdf_sha256": "db3467186b83898317ff1d12f0e0ac36169a4edabe0e7fae9ec23d30fb39503b",
+  "pdf_reference": "Author website PDF",
+  "verification": "Compared with the cited paper PDF; page numbers count from its first page.",
+  "figures": [
+    {
+      "file": "gestures.png",
+      "figure": "Figure 3; fig-gestures",
+      "pdf_page": 5,
+      "source_file": "figures/gesture.eps",
+      "source_sha256": "cbba3f56a5df60e72259f33c3b5199c36566e9af321fb75aa058aa3f22acfa75",
+      "sha256": "a30a8da7d629d78effe0eba22e98f5042131a1deb04a1faf2e268ea878e9715a",
+      "conversion": "EPS rendered to PNG at 150 dpi with Ghostscript; no content edits."
+    },
+    {
+      "file": "tactics-and-gestures.png",
+      "figure": "Figure 7; fig-averageScores",
+      "pdf_page": 8,
+      "source_file": "eski-style/figures-old/AverageScoreSon.png",
+      "source_sha256": "8008abb712fd0f5be090dbf799940b7a78c3775187b1937fdc6860b60f82fa9c",
+      "sha256": "8008abb712fd0f5be090dbf799940b7a78c3775187b1937fdc6860b60f82fa9c",
+      "conversion": "Unmodified source image.",
+      "display_file": "tactics-and-gestures.svg",
+      "display_sha256": "fed72f7036ec685f825a33343b2418ccfb23badbdd4890cfe9724347c1ea3481",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    }
+  ]
+}
