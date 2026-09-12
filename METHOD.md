@@ -39,6 +39,14 @@ The short Solver and Appearance examples do not claim those fruit reward rules.
 
 ## Remaining evidence gaps
 
+The inspected historical mood controller uses a .7 warning and a .3 Offended
+threshold, while its BABT wrapper uses .9 for the mild multiplier. The templates'
+.8/.95 values are illustrative. A zero hard reservation currently also gives the
+paper mood adapter a zero Offended threshold. In addition, BABT's maintained
+nearest-utility selector differs from the legacy expanding-interval random choice.
+These behavior differences need method/configuration decisions independently of
+participant-data availability.
+
 - Original practice profiles, questionnaire wording and gesture/argument corpus.
 - Numerical warning and BABT mood threshold with historical provenance.
 - Exact inclusion/exclusion mapping and permitted paired participant records.

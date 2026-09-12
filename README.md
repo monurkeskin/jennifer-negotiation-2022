@@ -1,83 +1,108 @@
-# Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not?
+# Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not? — [IEEE THMS 2022]
 
+Reyhan Aydoğan · Mehmet Onur Keskin · Umut Çakan
+
+[Paper](https://doi.org/10.1109/THMS.2021.3121664) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
+
+[![Tests](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/actions/workflows/tests.yml)
 [![Software archive](https://zenodo.org/badge/DOI/10.5281/zenodo.22729004.svg)](https://doi.org/10.5281/zenodo.22729004)
 
-**Independent research companion · maintained release 2.0.0**
+**Does a robot's gesture change a negotiation—and does the answer depend on how the robot bargains?**
 
-[![Tests](https://github.com/monurkeskin/jennifer-negotiation-2022/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/jennifer-negotiation-2022/actions/workflows/tests.yml)
-[Paper](https://doi.org/10.1109/THMS.2021.3121664) · [Method](METHOD.md) · [Reproduce](REPRODUCIBILITY.md) · [Protocol](docs/protocol.md) · [Contribute](docs/development.md)
+This study brings negotiation tactics and physical expression together. Participants negotiate with Jennifer with and without gestures, while separate participant groups encounter either a time-based or a behavior-based tactic.
 
-TSBT or BABT between groups, with within-participant gesture conditions and the notification protocol.
+## The idea
 
-This package contains this paper's configurations, method requirements, independent
-checks and analysis recipes. It uses a pinned [NEGOTIATOR](https://github.com/monurkeskin/NEGOTIATOR)
-engine; no second engine checkout or robot is needed for the first example.
+Gesture is varied **within participants**; tactic is varied **between groups**. This distinction matters when comparing outcomes. Each participant follows two main sessions, with score profiles attached to session position and robot gesture order counterbalanced.
 
-| Start here | What you will get |
-| --- | --- |
-| First-time user | A short generated negotiation, session records and a readable report |
-| Researcher reading the paper | [Paper map](paper-map.json), exact point tables where recovered, equation checks and result availability |
-| Contributor | [Module boundaries and test-first example](docs/development.md), extensible configs and reusable engine contracts |
+```mermaid
+flowchart TD
+  A[Participant assigned a tactic] --> B[Time-based group]
+  A --> C[Behavior-based group]
+  B --> D[With gestures and without gestures]
+  C --> E[With gestures and without gestures]
+  D --> F[Paired sessions; counterbalanced order]
+  E --> F
+```
 
-## Run your first example
+## In the paper
 
-Use Python 3.11 or 3.12. Clone this repository, then run:
+The paper reports higher robot utility for the behavior-based tactic and a gesture effect within that tactic. Its result is about the combination of bargaining behavior and expression; it should not be read as a uniform benefit of gestures across all strategies. [Read the paper](https://doi.org/10.1109/THMS.2021.3121664).
+
+## Explore this work
+
+Inspect all four tactic/order configurations, the published resource profiles and the difference between a formal bid and an interaction notification. Start with a text-only example, then use the protocol guide to prepare a device-backed study.
+
+| Explore | Start with | What it shows |
+| --- | --- | --- |
+| Study design | `CONFIGURATIONS.md` | Compare four tactic/gesture-order configurations. |
+| Protocol | `docs/protocol.md` | Practice, two main sessions, break and questionnaire timing. |
+| Profiles | `tests/test_paper_profiles.py` | Check every allocation against the published tables. |
+
+This repository holds the paper-specific configurations, method checks and study
+guides. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
+participant/conductor views and session analysis. Its exact **2.0.0** revision is
+pinned in [framework.json](framework.json); installation brings it in automatically.
+
+This package preserves the experimental factor structure and published point tables. The maintained BABT offer selector, numerical mood thresholds and speech/gesture assets need to be distinguished from the historical implementation; [METHOD.md](METHOD.md) records that boundary.
+
+## Try it yourself
+
+Use Python 3.11 or 3.12 and Git. This first example runs locally without a robot,
+camera or service account.
 
 ```bash
-git clone https://github.com/monurkeskin/jennifer-negotiation-2022.git
-cd jennifer-negotiation-2022
+git clone https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022.git
+cd Jennifer-Why-Not-THMS-2022
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python run.py --output demo-output
 ```
 
-On Windows, create the environment with `py -3 -m venv .venv` and activate it
-with `.venv\Scripts\Activate.ps1` in PowerShell. Git is required for the pinned
-engine dependency. [Troubleshooting and compatibility](docs/compatibility.md).
+On Windows, create the environment with `py -3 -m venv .venv` and activate it with
+`.venv\Scripts\Activate.ps1` in PowerShell.
 
-Open `demo-output/report/index.html`. The output includes full-precision JSON/CSV,
-a workbook, figures, immutable source records and a timing receipt. This is a
-**synthetic functional example**; it does not reproduce human participants or an
-emotional, gesture or embodiment benefit. Existing output directories are preserved.
+Open **`demo-output/report/index.html`** to follow the example negotiation. The
+output includes offers, utility trajectories, session records and exportable
+figures. These are synthetic examples for exploring the software and method.
+[Installation help](docs/compatibility.md).
 
-![Protocol overview: configuration, isolated sessions, durable events and analysis.](docs/images/protocol.svg)
-
-## Inspect the method and run the GUI
+### Read a calculation or open the study workspace
 
 ```bash
-negotiator reproduce reproduction/profile-1.json --output method-output
-negotiator cite demo-output/records --format bibtex
+negotiator reproduce reproduction/method.json --output method-output
 negotiator gui
 ```
 
-In **New study → Import a paper or study configuration**, choose
-`configs/synthetic.json` to inspect the hardware-free demonstration, or
-`configs/protocol-babt-no-gesture-first.json` to inspect the published-protocol template and its missing
-requirements. Participant and conductor use separate views. [Step-by-step protocol guide](docs/protocol.md).
+In **New study → Import a paper or study configuration**, select
+`configs/synthetic.json` for the demonstration, or `configs/protocol-babt-gesture-first.json`
+to inspect the paper's protocol template. The [study guide](docs/protocol.md)
+explains the remaining protocol/asset requirements and device setup.
 
-## What can currently be reproduced?
+## Data and reproducibility
 
-| Target | Scope |
-| --- | --- |
-| `method.json` | Recompute and check against independent references |
-| `profile-1.json` | Recompute and check against independent references |
-| `profile-2.json` | Recompute and check against independent references |
-| `paired-example.json` | Recompute and check against independent references |
-| `published-results.json` | Unavailable original inputs; no numbers fabricated |
+Participant-level records and audio/video recordings are **not distributed in this
+repository**. Restricted access is compatible with sharing the method, protocol and
+analysis code; it does not require releasing human-study data publicly. The package
+provides synthetic inputs and documents which computations can be run from them.
+Recomputing the published human-study statistics additionally requires authorized
+access to the relevant inputs and the corresponding analysis specification.
 
-Five-minute practice; two ten-minute main sessions; fifteen-minute break; nine-point questionnaire after both sessions. Point profiles are assigned by session position.
+[Reproducibility guide](REPRODUCIBILITY.md) · [Paper-to-code map](paper-map.json) ·
+[Analysis guide](docs/analysis.md)
 
-Original human records and some historical settings/assets remain unavailable.
-[REPRODUCIBILITY.md](REPRODUCIBILITY.md) explains every target and its limits;
-[paper-map.json](paper-map.json) records full, partial and unverified requirements
-separately. A passing synthetic test does not establish historical experiment parity.
+## Build on the work
 
-## Cite this work
+To change a paper condition, start with its configuration and add a small test
+showing the intended behavior. Shared negotiation rules belong in NEGOTIATOR;
+paper-specific profiles, protocols and result recipes belong here. The
+[development guide](docs/development.md) walks through these boundaries and the
+test-first workflow. [Contribution guide](CONTRIBUTING.md).
 
-Cite the associated paper when using or studying its method. Also cite the engine
-and record the exact software version used; `negotiator cite` extracts citations
-from executed session records.
+## Cite the paper
+
+If you use this method or study design, please cite the associated paper:
 
 ```bibtex
 @article{jennifernegotiation2022,
@@ -89,8 +114,8 @@ from executed session records.
 }
 ```
 
-[CITATION.cff](CITATION.cff) offers the paper as the preferred citation.
-[CodeMeta](codemeta.json), [source notices](NOTICE) and
-[framework identity](framework.json) support versioned attribution. The software
-is GPL-3.0-only. No paper working tree, participant recording or licensed robot
-asset is bundled.
+The [citation file](CITATION.cff) provides the paper as the preferred citation.
+For software provenance, also record the version and [archived 2.0.0 artifact](https://doi.org/10.5281/zenodo.22729004).
+When using the shared engine in new research, cite the
+[NEGOTIATOR framework paper](https://doi.org/10.24963/ijcai.2024/1012).
+GPL-3.0-only; original contributors and sources are credited in [NOTICE](NOTICE).
