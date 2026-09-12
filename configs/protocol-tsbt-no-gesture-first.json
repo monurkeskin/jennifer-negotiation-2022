@@ -1,0 +1,977 @@
+{
+  "study_id": "jennifer-negotiation-2022",
+  "participant_id": "P001",
+  "title": "Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not?",
+  "domain": "island",
+  "preference_mode": "assigned",
+  "cohort": "tsbt",
+  "first_actor": "human",
+  "output": "text",
+  "seed": 42,
+  "synthetic": false,
+  "instructions": "Study the displayed preferences and negotiate a complete offer before the deadline. Allocation quantities are what you keep.",
+  "surveys": [],
+  "conditions": [
+    {
+      "label": "Practice (synthetic three-issue task)",
+      "strategy": "tsbt",
+      "duration_seconds": 300,
+      "practice": true,
+      "domain": {
+        "schema_version": 1,
+        "name": "Synthetic practice",
+        "issues": [
+          {
+            "name": "map",
+            "total": 1
+          },
+          {
+            "name": "water",
+            "total": 1
+          },
+          {
+            "name": "food",
+            "total": 1
+          }
+        ]
+      },
+      "output": "text",
+      "mood_policy": "jennifer-2022",
+      "mood_parameters": {
+        "warning_fraction": 0.8,
+        "mild_multiplier": 0.95
+      },
+      "human_profile": {
+        "weights": {
+          "map": 0.5,
+          "water": 0.3333333333333333,
+          "food": 0.16666666666666666
+        },
+        "scores": {
+          "map": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "water": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.5
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "synthetic-rank-linear-paired-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "map": 0.3333333333333333,
+          "water": 0.5,
+          "food": 0.16666666666666666
+        },
+        "scores": {
+          "map": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ],
+          "water": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 1.0
+            },
+            {
+              "value": 1,
+              "score": 0.5
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "rank-linear-paired-v1"
+      }
+    },
+    {
+      "label": "No gesture",
+      "strategy": "tsbt",
+      "duration_seconds": 600,
+      "domain": "island",
+      "human_profile": {
+        "weights": {
+          "compass": 0.05,
+          "container": 0.2,
+          "food": 0.07,
+          "hammer": 0.13,
+          "knife": 0.1,
+          "match": 0.22,
+          "medicine": 0.06,
+          "rope": 0.17
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "compass": 0.13,
+          "container": 0.22,
+          "food": 0.17,
+          "hammer": 0.06,
+          "knife": 0.05,
+          "match": 0.2,
+          "medicine": 0.07,
+          "rope": 0.1
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      },
+      "output": "nao",
+      "output_device": "nao-speech",
+      "break_after_seconds": 900,
+      "gestures": false,
+      "practice": false,
+      "mood_policy": "jennifer-2022",
+      "mood_parameters": {
+        "warning_fraction": 0.8,
+        "mild_multiplier": 0.95
+      },
+      "score_targets": {
+        "human": 0.3
+      },
+      "reward_minimums": {}
+    },
+    {
+      "label": "Gesture",
+      "strategy": "tsbt",
+      "duration_seconds": 600,
+      "domain": "island",
+      "human_profile": {
+        "weights": {
+          "compass": 0.13,
+          "container": 0.05,
+          "food": 0.22,
+          "hammer": 0.1,
+          "knife": 0.17,
+          "match": 0.06,
+          "medicine": 0.07,
+          "rope": 0.2
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "compass": 0.06,
+          "container": 0.13,
+          "food": 0.2,
+          "hammer": 0.05,
+          "knife": 0.1,
+          "match": 0.07,
+          "medicine": 0.17,
+          "rope": 0.22
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      },
+      "output": "nao",
+      "output_device": "nao-gesture",
+      "gestures": true,
+      "practice": false,
+      "mood_policy": "jennifer-2022",
+      "mood_parameters": {
+        "warning_fraction": 0.8,
+        "mild_multiplier": 0.95
+      },
+      "score_targets": {
+        "human": 0.3
+      },
+      "reward_minimums": {}
+    }
+  ],
+  "purpose": "published-protocol",
+  "citation_ids": [
+    "jennifer-negotiation-2022"
+  ],
+  "order": "as_entered",
+  "interaction_protocol": "ready-offer-response",
+  "position_profiles": [
+    {
+      "human_profile": {
+        "weights": {
+          "compass": 0.05,
+          "container": 0.2,
+          "food": 0.07,
+          "hammer": 0.13,
+          "knife": 0.1,
+          "match": 0.22,
+          "medicine": 0.06,
+          "rope": 0.17
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "compass": 0.13,
+          "container": 0.22,
+          "food": 0.17,
+          "hammer": 0.06,
+          "knife": 0.05,
+          "match": 0.2,
+          "medicine": 0.07,
+          "rope": 0.1
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      }
+    },
+    {
+      "human_profile": {
+        "weights": {
+          "compass": 0.13,
+          "container": 0.05,
+          "food": 0.22,
+          "hammer": 0.1,
+          "knife": 0.17,
+          "match": 0.06,
+          "medicine": 0.07,
+          "rope": 0.2
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "compass": 0.06,
+          "container": 0.13,
+          "food": 0.2,
+          "hammer": 0.05,
+          "knife": 0.1,
+          "match": 0.07,
+          "medicine": 0.17,
+          "rope": 0.22
+        },
+        "scores": {
+          "medicine": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "food": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "compass": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "hammer": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "knife": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "container": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "rope": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ],
+          "match": [
+            {
+              "value": 0,
+              "score": 0.0
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            }
+          ]
+        },
+        "reservation": 0,
+        "provenance": "assigned",
+        "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+      }
+    }
+  ],
+  "protocol": {
+    "id": "jennifer-negotiation-2022",
+    "revision": "2",
+    "paper": "https://doi.org/10.1109/THMS.2021.3121664",
+    "requirements": [
+      {
+        "id": "evidence-1",
+        "description": "Original practice profiles, questionnaire wording and gesture/argument corpus"
+      },
+      {
+        "id": "evidence-2",
+        "description": "Numerical warning and BABT mood threshold with historical provenance"
+      },
+      {
+        "id": "evidence-3",
+        "description": "Exact inclusion/exclusion mapping and permitted paired participant records"
+      }
+    ],
+    "configuration_sha256": "c0a3912e655fb6182f4070707612c9882f6deb1e72405cf2aabe4b0815f82cc9"
+  }
+}

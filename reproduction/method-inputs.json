@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "id": "lower-0",
+      "operation": "time",
+      "arguments": {
+        "t": 0,
+        "p0": 0.94,
+        "p1": 0.5,
+        "p2": 0.4
+      }
+    },
+    {
+      "id": "lower-0.5",
+      "operation": "time",
+      "arguments": {
+        "t": 0.5,
+        "p0": 0.94,
+        "p1": 0.5,
+        "p2": 0.4
+      }
+    },
+    {
+      "id": "lower-1",
+      "operation": "time",
+      "arguments": {
+        "t": 1,
+        "p0": 0.94,
+        "p1": 0.5,
+        "p2": 0.4
+      }
+    },
+    {
+      "id": "upper-0",
+      "operation": "time",
+      "arguments": {
+        "t": 0,
+        "p0": 1.0,
+        "p1": 0.9,
+        "p2": 0.7
+      }
+    },
+    {
+      "id": "upper-0.5",
+      "operation": "time",
+      "arguments": {
+        "t": 0.5,
+        "p0": 1.0,
+        "p1": 0.9,
+        "p2": 0.7
+      }
+    },
+    {
+      "id": "upper-1",
+      "operation": "time",
+      "arguments": {
+        "t": 1,
+        "p0": 1.0,
+        "p1": 0.9,
+        "p2": 0.7
+      }
+    }
+  ]
+}

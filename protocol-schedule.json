@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "paper_id": "jennifer-negotiation-2022",
+  "protocol_summary": "Five-minute practice; two ten-minute main sessions; fifteen-minute break; nine-point questionnaire after both sessions. Point profiles are assigned by session position.",
+  "historical_instruments_included": false,
+  "unknowns": [
+    "Original practice profiles, questionnaire wording and gesture/argument corpus",
+    "Numerical warning and BABT mood threshold with historical provenance",
+    "Exact inclusion/exclusion mapping and permitted paired participant records"
+  ],
+  "required_before_human_use": "Resolve each missing evidence item and validate the local study protocol before starting.",
+  "analysis_unit": "participant",
+  "minimum_rounds_in_either_session": 0,
+  "round_definition": "Must be supplied from the historical record; do not equate rounds with individual offers.",
+  "questionnaires": "post_study",
+  "empirical_reproduction": "unavailable: original permitted inputs and analysis provenance are not included"
+}

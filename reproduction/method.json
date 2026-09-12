@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "paper_id": "jennifer-negotiation-2022",
+  "result_id": "method-equations",
+  "claim_scope": "published-method",
+  "analysis": "method-vectors",
+  "environment": {
+    "framework": "2.0.0"
+  },
+  "parameters": {},
+  "inputs": [
+    {
+      "id": "method-cases",
+      "path": "method-inputs.json",
+      "sha256": "9bd31fc1d019a679627886641174344cdadd6b37f5a4abba7b3e8bcf515e00e3"
+    }
+  ],
+  "expected": [
+    {
+      "key": "lower-0",
+      "value": 0.94,
+      "source": "eq-concession with the published TSBT bound control points"
+    },
+    {
+      "key": "lower-0.5",
+      "value": 0.585,
+      "source": "eq-concession with the published TSBT bound control points"
+    },
+    {
+      "key": "lower-1",
+      "value": 0.4,
+      "source": "eq-concession with the published TSBT bound control points"
+    },
+    {
+      "key": "upper-0",
+      "value": 1.0,
+      "source": "eq-concession with the published TSBT bound control points"
+    },
+    {
+      "key": "upper-0.5",
+      "value": 0.875,
+      "source": "eq-concession with the published TSBT bound control points"
+    },
+    {
+      "key": "upper-1",
+      "value": 0.7,
+      "source": "eq-concession with the published TSBT bound control points"
+    }
+  ],
+  "description": "Independent equation checks. Test vectors do not estimate a human effect or recover unreported historical constants."
+}

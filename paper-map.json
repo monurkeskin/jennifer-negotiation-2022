@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "repository": "jennifer-negotiation-2022",
+  "paper": {
+    "type": "article",
+    "title": "Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not?",
+    "authors": [
+      {
+        "given-names": "Reyhan",
+        "family-names": "Aydoğan"
+      },
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      },
+      {
+        "given-names": "Umut",
+        "family-names": "Çakan"
+      }
+    ],
+    "year": 2022,
+    "url": "https://doi.org/10.1109/THMS.2021.3121664",
+    "doi": "10.1109/THMS.2021.3121664"
+  },
+  "selected_source": {
+    "entry": "main.tex",
+    "scope": "Selected publication-aligned manuscript only. Working sources and reviewer correspondence are not distributed."
+  },
+  "framework": "framework.json",
+  "requirements": [
+    {
+      "id": "method-alg-strategy",
+      "axis": "method",
+      "requirement": "alg-strategy",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Strategy.tex",
+          "sha256": "3934872f52d7c22fcaa91f8854fc953452f9f0ac90d24f02e8c38cab54f51a90",
+          "label": "alg-strategy",
+          "line": 15,
+          "nearby_graphics": [
+            {
+              "reference": "figures/jennifer_decision_alg.PNG",
+              "line": 12,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents",
+        "negotiator.interaction.dialogue",
+        "negotiator.interaction.mood"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_paper_interaction.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_jennifer_moods.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-tb-decision",
+      "axis": "method",
+      "requirement": "tb-decision",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Strategy.tex",
+          "sha256": "3934872f52d7c22fcaa91f8854fc953452f9f0ac90d24f02e8c38cab54f51a90",
+          "label": "tb-decision",
+          "line": 99,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents",
+        "negotiator.interaction.dialogue",
+        "negotiator.interaction.mood"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_paper_interaction.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_jennifer_moods.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-concession",
+      "axis": "method",
+      "requirement": "eq-concession",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "eq-concession",
+          "line": 16,
+          "nearby_graphics": [
+            {
+              "reference": "figures/concession.png",
+              "line": 24,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-targetutility",
+      "axis": "method",
+      "requirement": "eq-targetutility",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "eq-targetutility",
+          "line": 39,
+          "nearby_graphics": [
+            {
+              "reference": "figures/concession.png",
+              "line": 24,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-mu",
+      "axis": "method",
+      "requirement": "eq-mu",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "eq-mu",
+          "line": 41,
+          "nearby_graphics": [
+            {
+              "reference": "figures/concession.png",
+              "line": 24,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-delta",
+      "axis": "method",
+      "requirement": "eq-delta",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "eq-delta",
+          "line": 37,
+          "nearby_graphics": [
+            {
+              "reference": "figures/concession.png",
+              "line": 24,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "published-profiles",
+      "axis": "protocol",
+      "requirement": "Published points and human-share perspective",
+      "status": "full",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "tb-scenario",
+          "line": 67,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "configs/",
+        "negotiator.domain.preferences"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_paper_profiles.py"
+        }
+      ],
+      "result_target": "reproduction/profile-1.json",
+      "explanation": "Every allocation is checked independently for both actors and each published session position. Targets and reward thresholds are separate from reservation constraints.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "protocol-schedule",
+      "axis": "protocol",
+      "requirement": "Practice, order, durations, breaks, instruments and condition identity",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/NegotiationProtocol.tex",
+          "sha256": "0739f91d8527ff48cb19c63b084b97d522203217614781828e29b7ffcd2082f1",
+          "label": "sec-protocol",
+          "line": 2,
+          "nearby_graphics": [
+            {
+              "reference": "figures/Protocol.png",
+              "line": 9,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        },
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "tb-scenario",
+          "line": 67,
+          "nearby_graphics": []
+        },
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "sec-setup",
+          "line": 48,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "configs/",
+        "protocol-schedule.json",
+        "negotiator.application.protocol",
+        "negotiator.application.studies"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_protocol_contract.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_study_protocols.py"
+        }
+      ],
+      "result_target": "configs/synthetic.json",
+      "explanation": "Five-minute practice; two ten-minute main sessions; fifteen-minute break; nine-point questionnaire after both sessions. Point profiles are assigned by session position. Missing original assets and instrument wording remain explicit preflight requirements.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "historical-outcomes",
+      "axis": "analysis",
+      "requirement": "Recompute the original participant results",
+      "status": "unverified",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "tbl-unsuccess-nego",
+          "line": 112,
+          "nearby_graphics": [
+            {
+              "reference": "figures/setup.png",
+              "line": 95,
+              "path": null,
+              "sha256": null
+            },
+            {
+              "reference": "eski-style/figures-old/AverageScoreSon.png",
+              "line": 128,
+              "path": "eski-style/figures-old/AverageScoreSon.png",
+              "sha256": "8008abb712fd0f5be090dbf799940b7a78c3775187b1937fdc6860b60f82fa9c"
+            }
+          ]
+        },
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "fig-averageScores",
+          "line": 130,
+          "nearby_graphics": [
+            {
+              "reference": "eski-style/figures-old/AverageScoreSon.png",
+              "line": 128,
+              "path": "eski-style/figures-old/AverageScoreSon.png",
+              "sha256": "8008abb712fd0f5be090dbf799940b7a78c3775187b1937fdc6860b60f82fa9c"
+            }
+          ]
+        },
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "fig-questionnaire",
+          "line": 207,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "reproduction/published-results.json"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/published-results.json",
+      "explanation": "Original permitted inputs and historical analysis decisions are unavailable. The recipe returns an unavailable receipt and no numerical result.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "participant-analysis",
+      "axis": "analysis",
+      "requirement": "Participant unit, pairing, cohorts and missingness",
+      "status": "partial",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "tbl-unsuccess-nego",
+          "line": 112,
+          "nearby_graphics": [
+            {
+              "reference": "figures/setup.png",
+              "line": 95,
+              "path": null,
+              "sha256": null
+            },
+            {
+              "reference": "eski-style/figures-old/AverageScoreSon.png",
+              "line": 128,
+              "path": "eski-style/figures-old/AverageScoreSon.png",
+              "sha256": "8008abb712fd0f5be090dbf799940b7a78c3775187b1937fdc6860b60f82fa9c"
+            }
+          ]
+        },
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "fig-averageScores",
+          "line": 130,
+          "nearby_graphics": [
+            {
+              "reference": "eski-style/figures-old/AverageScoreSon.png",
+              "line": 128,
+              "path": "eski-style/figures-old/AverageScoreSon.png",
+              "sha256": "8008abb712fd0f5be090dbf799940b7a78c3775187b1937fdc6860b60f82fa9c"
+            }
+          ]
+        },
+        {
+          "entry": "main.tex",
+          "file": "latex/Evaluation.tex",
+          "sha256": "c48848475e307ee53eb6bbbf93177b6e364bf66a406e73466e8edc1a0d368607",
+          "label": "fig-questionnaire",
+          "line": 207,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.reproduction.operations.paired_summary",
+        "reproduction/paired-example.json"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_reproduction.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/paired-example.json",
+      "explanation": "Tested generic paired analysis with explicit cohort/domain grouping and exclusions; synthetic input and modern percentile intervals do not reproduce the paper significance tests.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "independent-use",
+      "axis": "runnability",
+      "requirement": "Independent install, configuration, run and report",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/NegotiationProtocol.tex",
+          "sha256": "0739f91d8527ff48cb19c63b084b97d522203217614781828e29b7ffcd2082f1",
+          "label": "sec-protocol",
+          "line": 2,
+          "nearby_graphics": [
+            {
+              "reference": "figures/Protocol.png",
+              "line": 9,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "run.py",
+        "requirements.txt",
+        "framework.json"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_companion.py"
+        }
+      ],
+      "result_target": "configs/synthetic.json",
+      "explanation": "The supported hardware-free example runs in a clean environment using only the pinned engine. Robot operation requires separate lab validation.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "reader-paths",
+      "axis": "documentation",
+      "requirement": "First use, paper inspection, contribution and citation",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "main.tex",
+          "file": "latex/Strategy.tex",
+          "sha256": "3934872f52d7c22fcaa91f8854fc953452f9f0ac90d24f02e8c38cab54f51a90",
+          "label": "alg-strategy",
+          "line": 15,
+          "nearby_graphics": [
+            {
+              "reference": "figures/jennifer_decision_alg.PNG",
+              "line": 12,
+              "path": null,
+              "sha256": null
+            }
+          ]
+        }
+      ],
+      "implementation": [
+        "README.md",
+        "METHOD.md",
+        "REPRODUCIBILITY.md",
+        "docs/"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_release_contract.py"
+        }
+      ],
+      "result_target": "reproduction/targets.json",
+      "explanation": "Executable example commands, method map, protocol limits and preferred paper citation are provided.",
+      "documentation": "METHOD.md"
+    }
+  ],
+  "interpretation": {
+    "full": "Evidence supports this scoped requirement, not the entire paper.",
+    "partial": "Some elements are implemented but unresolved method/protocol choices remain.",
+    "unverified": "Required original evidence is unavailable."
+  }
+}

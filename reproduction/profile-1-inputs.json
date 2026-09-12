@@ -1,0 +1,234 @@
+{
+  "domain": {
+    "schema_version": 1,
+    "name": "Island",
+    "issues": [
+      {
+        "name": "medicine",
+        "total": 1
+      },
+      {
+        "name": "food",
+        "total": 1
+      },
+      {
+        "name": "compass",
+        "total": 1
+      },
+      {
+        "name": "hammer",
+        "total": 1
+      },
+      {
+        "name": "knife",
+        "total": 1
+      },
+      {
+        "name": "container",
+        "total": 1
+      },
+      {
+        "name": "rope",
+        "total": 1
+      },
+      {
+        "name": "match",
+        "total": 1
+      }
+    ]
+  },
+  "human_profile": {
+    "weights": {
+      "compass": 0.05,
+      "container": 0.2,
+      "food": 0.07,
+      "hammer": 0.13,
+      "knife": 0.1,
+      "match": 0.22,
+      "medicine": 0.06,
+      "rope": 0.17
+    },
+    "scores": {
+      "medicine": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "food": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "compass": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "hammer": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "knife": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "container": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "rope": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "match": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ]
+    },
+    "reservation": 0,
+    "provenance": "assigned",
+    "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+  },
+  "agent_profile": {
+    "weights": {
+      "compass": 0.13,
+      "container": 0.22,
+      "food": 0.17,
+      "hammer": 0.06,
+      "knife": 0.05,
+      "match": 0.2,
+      "medicine": 0.07,
+      "rope": 0.1
+    },
+    "scores": {
+      "medicine": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "food": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "compass": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "hammer": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "knife": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "container": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "rope": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ],
+      "match": [
+        {
+          "value": 0,
+          "score": 0.0
+        },
+        {
+          "value": 1,
+          "score": 1.0
+        }
+      ]
+    },
+    "reservation": 0,
+    "provenance": "assigned",
+    "conversion": "2022-jennifer-why-not-tb-scenario-points-v1"
+  }
+}

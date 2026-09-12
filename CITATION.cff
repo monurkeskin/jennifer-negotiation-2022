@@ -1,0 +1,38 @@
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite the associated paper, and NEGOTIATOR for the framework. Record the software version used.",
+  "type": "software",
+  "title": "Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not? — maintained code companion",
+  "authors": [
+    {
+      "given-names": "Mehmet Onur",
+      "family-names": "Keskin"
+    }
+  ],
+  "version": "2.0.0",
+  "date-released": "2026-09-12",
+  "license": "GPL-3.0-only",
+  "repository-code": "https://github.com/monurkeskin/jennifer-negotiation-2022",
+  "doi": "10.5281/zenodo.22729004",
+  "preferred-citation": {
+    "type": "article",
+    "title": "Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not?",
+    "authors": [
+      {
+        "given-names": "Reyhan",
+        "family-names": "Aydoğan"
+      },
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      },
+      {
+        "given-names": "Umut",
+        "family-names": "Çakan"
+      }
+    ],
+    "year": 2022,
+    "url": "https://doi.org/10.1109/THMS.2021.3121664",
+    "doi": "10.1109/THMS.2021.3121664"
+  }
+}

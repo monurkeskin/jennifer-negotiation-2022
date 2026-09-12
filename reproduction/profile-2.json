@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "paper_id": "jennifer-negotiation-2022",
+  "result_id": "profile-space-session-2",
+  "claim_scope": "published-method",
+  "analysis": "profile-space",
+  "parameters": {},
+  "environment": {
+    "framework": "2.0.0"
+  },
+  "inputs": [
+    {
+      "id": "published-points",
+      "path": "profile-2-inputs.json",
+      "sha256": "079da7c29f390ef1cc2559fcbd0eb6020847797b87f276394b097a91b2aaf06b"
+    }
+  ],
+  "expected": [
+    {
+      "key": "outcome_count",
+      "value": 256,
+      "source": "Exhaustive allocation of the published point table; all resources sum to 100 points."
+    },
+    {
+      "key": "human_min",
+      "value": 0,
+      "source": "Exhaustive allocation of the published point table; all resources sum to 100 points."
+    },
+    {
+      "key": "agent_min",
+      "value": 0,
+      "source": "Exhaustive allocation of the published point table; all resources sum to 100 points."
+    },
+    {
+      "key": "human_max",
+      "value": 1,
+      "source": "Exhaustive allocation of the published point table; all resources sum to 100 points."
+    },
+    {
+      "key": "agent_max",
+      "value": 1,
+      "source": "Exhaustive allocation of the published point table; all resources sum to 100 points."
+    }
+  ],
+  "description": "Recalculates additive utility over the complete paper domain. Profiles and independent tests use the published point tables."
+}
