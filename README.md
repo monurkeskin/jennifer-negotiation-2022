@@ -5,13 +5,10 @@ Reyhan Aydoğan · Mehmet Onur Keskin · Umut Çakan
 [Paper](https://doi.org/10.1109/THMS.2021.3121664) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
 
 [![Tests](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/actions/workflows/tests.yml)
-[![Software archive](https://zenodo.org/badge/DOI/10.5281/zenodo.22729004.svg)](https://doi.org/10.5281/zenodo.22729004)
-
-**Does a robot's gesture change a negotiation—and does the answer depend on how the robot bargains?**
 
 This study brings negotiation tactics and physical expression together. Participants negotiate with Jennifer with and without gestures, while separate participant groups encounter either a time-based or a behavior-based tactic.
 
-## The idea
+## Method
 
 Gesture is varied **within participants**; tactic is varied **between groups**. This distinction matters when comparing outcomes. Each participant follows two main sessions, with score profiles attached to session position and robot gesture order counterbalanced.
 
@@ -25,22 +22,21 @@ flowchart TD
   E --> F
 ```
 
-## In the paper
+## Study and findings
 
 The paper reports higher robot utility for the behavior-based tactic and a gesture effect within that tactic. Its result is about the combination of bargaining behavior and expression; it should not be read as a uniform benefit of gestures across all strategies. [Read the paper](https://doi.org/10.1109/THMS.2021.3121664).
 
-## Explore this work
+## What you can explore
 
 Inspect all four tactic/order configurations, the published resource profiles and the difference between a formal bid and an interaction notification. Start with a text-only example, then use the protocol guide to prepare a device-backed study.
 
 | Explore | Start with | What it shows |
 | --- | --- | --- |
-| Study design | `CONFIGURATIONS.md` | Compare four tactic/gesture-order configurations. |
-| Protocol | `docs/protocol.md` | Practice, two main sessions, break and questionnaire timing. |
-| Profiles | `tests/test_paper_profiles.py` | Check every allocation against the published tables. |
+| Study design | [CONFIGURATIONS.md](CONFIGURATIONS.md) | Compare four tactic/gesture-order configurations. |
+| Protocol | [docs/protocol.md](docs/protocol.md) | Practice, two main sessions, break and questionnaire timing. |
+| Profiles | [tests/test_paper_profiles.py](tests/test_paper_profiles.py) | Check every allocation against the published tables. |
 
-This repository holds the paper-specific configurations, method checks and study
-guides. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
+The configurations, method checks and study guides are specific to this paper. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
 participant/conductor views and session analysis. Its exact **2.0.0** revision is
 pinned in [framework.json](framework.json); installation brings it in automatically.
 
@@ -80,14 +76,12 @@ In **New study → Import a paper or study configuration**, select
 to inspect the paper's protocol template. The [study guide](docs/protocol.md)
 explains the remaining protocol/asset requirements and device setup.
 
-## Data and reproducibility
+## Data and analysis
 
-Participant-level records and audio/video recordings are **not distributed in this
-repository**. Restricted access is compatible with sharing the method, protocol and
-analysis code; it does not require releasing human-study data publicly. The package
-provides synthetic inputs and documents which computations can be run from them.
-Recomputing the published human-study statistics additionally requires authorized
-access to the relevant inputs and the corresponding analysis specification.
+Participant records and recordings are not included. The examples use labeled
+synthetic inputs so you can run the code and inspect its calculations. Recomputing
+the human-study results requires authorized access to the original inputs and
+the matching analysis procedure.
 
 [Reproducibility guide](REPRODUCIBILITY.md) · [Paper-to-code map](paper-map.json) ·
 [Analysis guide](docs/analysis.md)
