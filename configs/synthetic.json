@@ -39,7 +39,8 @@
       "mood_policy": "jennifer-2022",
       "mood_parameters": {
         "warning_fraction": 0.8,
-        "mild_multiplier": 0.95
+        "mild_multiplier": 0.95,
+        "offended_threshold": 0.3
       },
       "output_device": null,
       "human_profile": {
@@ -332,7 +333,8 @@
       "mood_policy": "jennifer-2022",
       "mood_parameters": {
         "warning_fraction": 0.8,
-        "mild_multiplier": 0.95
+        "mild_multiplier": 0.95,
+        "offended_threshold": 0.3
       },
       "output": "text",
       "output_device": null,
@@ -545,7 +547,8 @@
       "mood_policy": "jennifer-2022",
       "mood_parameters": {
         "warning_fraction": 0.8,
-        "mild_multiplier": 0.95
+        "mild_multiplier": 0.95,
+        "offended_threshold": 0.3
       },
       "output": "text",
       "output_device": null,

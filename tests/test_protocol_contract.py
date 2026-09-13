@@ -69,3 +69,11 @@ def test_paper_score_target_does_not_prohibit_below_target_agreement(path):
         assert condition.human_profile["reservation"] == 0
         assert condition.score_targets["human"] == 0.3
         assert condition.reward_minimums == {}
+
+
+@pytest.mark.parametrize("path", sorted((ROOT / "configs").glob("*.json")), ids=lambda p: p.stem)
+def test_social_reaction_threshold_is_recorded_separately_from_reservation(path):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    for condition in data["conditions"]:
+        if condition.get("mood_policy", "generic").startswith("jennifer-"):
+            assert condition["mood_parameters"]["offended_threshold"] == 0.3

@@ -39,7 +39,8 @@
       "mood_policy": "jennifer-2022",
       "mood_parameters": {
         "warning_fraction": 0.8,
-        "mild_multiplier": 0.95
+        "mild_multiplier": 0.95,
+        "offended_threshold": 0.3
       },
       "human_profile": {
         "weights": {
@@ -333,7 +334,8 @@
       "mood_policy": "jennifer-2022",
       "mood_parameters": {
         "warning_fraction": 0.8,
-        "mild_multiplier": 0.95
+        "mild_multiplier": 0.95,
+        "offended_threshold": 0.3
       },
       "score_targets": {
         "human": 0.3
@@ -546,7 +548,8 @@
       "mood_policy": "jennifer-2022",
       "mood_parameters": {
         "warning_fraction": 0.8,
-        "mild_multiplier": 0.95
+        "mild_multiplier": 0.95,
+        "offended_threshold": 0.3
       },
       "score_targets": {
         "human": 0.3
@@ -956,22 +959,25 @@
   ],
   "protocol": {
     "id": "jennifer-negotiation-2022",
-    "revision": "2",
+    "revision": "3",
     "paper": "https://doi.org/10.1109/THMS.2021.3121664",
     "requirements": [
       {
         "id": "evidence-1",
-        "description": "Original practice profiles, questionnaire wording and gesture/argument corpus"
+        "description": "Original practice profiles, questionnaire wording and gesture/argument corpus",
+        "required_for": "execution"
       },
       {
         "id": "evidence-2",
-        "description": "Numerical warning and BABT mood threshold with historical provenance"
+        "description": "Numerical warning and BABT mood threshold with historical provenance",
+        "required_for": "historical-analysis"
       },
       {
         "id": "evidence-3",
-        "description": "Exact inclusion/exclusion mapping and permitted paired participant records"
+        "description": "Exact inclusion/exclusion mapping and permitted paired participant records",
+        "required_for": "historical-analysis"
       }
     ],
-    "configuration_sha256": "c0a3912e655fb6182f4070707612c9882f6deb1e72405cf2aabe4b0815f82cc9"
+    "configuration_sha256": "70cb13e1d2a8c5c4df027b31cbe07f12df42e7d9231369c3ad94b867af112a6d"
   }
 }

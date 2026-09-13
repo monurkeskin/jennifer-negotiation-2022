@@ -39,14 +39,6 @@ The short Solver and Appearance examples do not claim those fruit reward rules.
 
 ## Remaining evidence gaps
 
-The inspected historical mood controller uses a .7 warning and a .3 Offended
-threshold, while its BABT wrapper uses .9 for the mild multiplier. The templates'
-.8/.95 values are illustrative. A zero hard reservation currently also gives the
-paper mood adapter a zero Offended threshold. In addition, BABT's maintained
-nearest-utility selector differs from the legacy expanding-interval random choice.
-These behavior differences need method/configuration decisions independently of
-participant-data availability.
-
 - Original practice profiles, questionnaire wording and gesture/argument corpus.
 - Numerical warning and BABT mood threshold with historical provenance.
 - Exact inclusion/exclusion mapping and permitted paired participant records.
@@ -65,3 +57,24 @@ The common engine owns utility, lifecycle, logs, GUI, shared methods and device
 contracts. This repository owns paper-specific profiles, protocol choices, analysis
 rules, reproduction targets and tests. [framework.json](framework.json) pins the
 engine; [NOTICE](NOTICE) preserves original source attribution.
+
+## Social reaction and agreement thresholds
+
+Protocol revision 3 in release 2.1.0 records `offended_threshold: 0.3` separately from
+the preference reservation. This restores the low-offer social reaction while
+keeping offers below that social threshold legally negotiable. The value follows
+the historical Jennifer mood implementation; it is not an estimated optimum.
+The maintained warning fraction and mild multiplier are unchanged.
+
+Older journals without this field retain their recorded reservation-based mood
+behavior on replay. Release 2.1.0 pins the matching engine; the archived 2.0.0
+configurations retain their previous behavior.
+
+## Retained presentation choices
+
+The maintained warning fraction is .8 and the mild multiplier is .95. The
+inspected historical controller uses a .7 warning; the historical BABT wrapper
+uses .9 for its mild multiplier. The author accepted retaining the maintained
+values, so these are explicit choices rather than recovered historical constants.
+BABT also retains nearest-utility selection; the older expanding-interval
+random selector is not reproduced by that choice.

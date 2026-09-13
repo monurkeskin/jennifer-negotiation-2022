@@ -1,6 +1,6 @@
 {
   "title": "Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not? — maintained code companion",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "upload_type": "software",
   "description": "Maintained research software for Would You Imagine Yourself Negotiating With a Robot, Jennifer? Why Not?. Reproducibility scope and source provenance are documented in the repository.",
   "creators": [
@@ -15,6 +15,5 @@
       "relation": "isSupplementTo",
       "scheme": "doi"
     }
-  ],
-  "doi": "10.5281/zenodo.22729004"
+  ]
 }

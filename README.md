@@ -65,7 +65,7 @@ Inspect all four tactic/order configurations, the published resource profiles an
 | Profiles | [tests/test_paper_profiles.py](tests/test_paper_profiles.py) | Check every allocation against the published tables. |
 
 The configurations, method checks and study guides are specific to this paper. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
-participant/conductor views and session analysis. Its exact **2.0.0** revision is
+participant/conductor views and session analysis. Its exact **2.1.0** revision is
 pinned in [framework.json](framework.json); installation brings it in automatically.
 
 This package preserves the experimental factor structure and published point tables. The maintained BABT offer selector, numerical mood thresholds and speech/gesture assets need to be distinguished from the historical implementation; [METHOD.md](METHOD.md) records that boundary.
@@ -137,7 +137,7 @@ If you use this method or study design, please cite the associated paper:
 ```
 
 The [citation file](CITATION.cff) provides the paper as the preferred citation.
-For software provenance, also record the version and [archived 2.0.0 artifact](https://doi.org/10.5281/zenodo.22729004).
+For software provenance, record the [2.1.0 release](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022/releases/tag/v2.1.0) and commit used. The earlier [archived 2.0.0 artifact](https://doi.org/10.5281/zenodo.22729004) remains available.
 When using the shared engine in new research, cite the
 [NEGOTIATOR framework paper](https://doi.org/10.24963/ijcai.2024/1012).
 GPL-3.0-only; original contributors and sources are credited in [NOTICE](NOTICE).

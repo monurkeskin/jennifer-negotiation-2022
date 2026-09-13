@@ -48,3 +48,16 @@ continuing; restarting an interrupted session does not invent elapsed time.
 After completion use **Build report**, or run `negotiator report PATH --output NEW_DIR`.
 Keep original records and the generated report together, and export citations using
 `negotiator cite PATH --format bibtex`. [Analysis guide](analysis.md).
+
+## Materials for a new session
+
+Each protocol requirement names its purpose. `execution` requirements cover the
+model, instruments and presentation materials needed to run the configured study.
+Their availability and hashes are checked before a session starts.
+`historical-analysis` requirements describe evidence needed to assess the original
+experiment; unavailable participant records do not prevent a new session.
+
+This separation does not establish equivalence with the historical experiment.
+A demonstration remains synthetic, and a missing runtime asset still blocks a
+published-protocol run. Inspect historical requirements separately with
+`protocol_readiness(spec, operation="historical-analysis")`.
